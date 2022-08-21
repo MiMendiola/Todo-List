@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fff;
+    --orange: #fecf41;
+    --blue-light: #04d4c3;
+    --blue-dark: #2ac2c2;
+    --green: #2c7b90;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--orange), var(--blue-light));
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+/* PROFILE */
+.profile h1{
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.profile span{
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+#date{
+    color: var(--white);
+    padding: 50px 0 5px 0;
+}
+
+/* ADD TASK */
+.add-task{
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    gap: 2rem;
+    margin: 40px 0;
+}
+
+.add-task input{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: var(--white);
+}
+.add-task input::placeholder{
+    font-size: 1.1rem;
+    color: var(--orange);
+}
+
+.add-task i{
+    color: var(--orange);
+    font-size: 2.5rem;
+}
+.add-task i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* SECTION */
+.section-task h3{
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.section-task li{
+    display: flex;
+    color: var(--white);
+    background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+    border-radius: 2rem;
+    padding: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.section-task i{
+    font-size: 1rem;
+}
+.section-task i:hover{
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.section-task ul li p{
+    font-size: 1rem;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: var(--blue-light);
+}
